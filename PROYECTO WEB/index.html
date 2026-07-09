@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Wellspring</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="Js/script.js" defer></script>
+</head>
+<body> 
+     <!-- ENCABEZADO (HEADER): Nombre del hotel -->
+  <header>
+    <h1>Hotel Wellspring</h1>
+    <!-- MENÚ DE NAVEGACIÓN (NAV): Enlaces a las secciones -->
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#nuestras-habitaciones">Nuestras Habitaciones</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#reservas">Reserva</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+  </header>
+ <!-- CONTENIDO PRINCIPAL (MAIN) -->
+<main>
+    <!-- SECCIÓN INICIO -->
+  <selec class="hero" id="inicio">
+    <div class="hero-content">
+      <h2>Descansa con estilo y comodidad</h2>
+      <p>Disfruta una experiencia elegante, tranquila y segura en el corazón de la ciudad.</p>
+      <a href="#reservas" class="btn">Reservar ahora</a>
+    </div>
+  </selec>
+
+  <section class="about" id="nosotros">
+    <div class="about-text">
+      <h2>Bienvenido a Hotel Wellspring</h2>
+      <p>
+        Somos un hotel diseñado para viajeros que buscan comodidad, privacidad y buena atención.
+        Contamos con habitaciones modernas, servicio personalizado y espacios pensados para tu descanso.
+      </p>
+      <br>
+      <p>
+        Ya sea por vacaciones, negocios o una escapada especial, nuestro equipo está listo para brindarte
+        una estadía agradable y segura.
+      </p>
+    </div>
+
+    <img src="imagenes/sala.jpeg" alt="Interior del hotel">
+  </section>
+
+  <!-- SECCIÓN INFORMACIÓN -->
+  <section id="nuestras-habitaciones">
+    <div class="section-title">
+      <h2>Nuestras Habitaciones</h2>
+      <p>Elige la opción ideal para tu estadía</p>
+    </div>
+
+    <div class="rooms">
+      <div class="card">
+        <img src="imagenes/Habitacion King Size.jpg" alt="Habitación King Size">
+        <div class="card-content">
+          <h3>Habitación King Size</h3>
+          <p>Cama amplia, TV, WiFi gratis, baño privado y ambiente moderno.</p>
+          <p class="price">S/ 150 por noche</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagenes/Habitacion con cama redonda.jpg" alt="Habitación Con Cama Redonda">
+        <div class="card-content">
+          <h3>Habitación Con Cama Redonda</h3>
+          <p>cama cómoda, iluminación cálida, TV, WiFi gratis, baño privado y ambiente moderno.</p>
+          <p class="price">S/ 150 por noche</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagenes/Habitacion con Jacuzzi.jpg" alt="Habitación con Jacuzzi">
+        <div class="card-content">
+          <h3>Habitación con Jacuzzi</h3>
+          <p>Jacuzzi privado, cama matrimonial, TV, WiFi gratis y atención especial.</p>
+          <p class="price">S/ 250 por noche</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- SECCIÓN SERVICIOS -->
+  <section id="servicios">
+    <div class="section-title">
+      <h2>Servicios</h2>
+      <p>Todo lo que necesitas para una estadía cómoda</p>
+    </div>
+
+    <div class="services">
+      <div class="card">
+        <div class="card-content">
+          <h3>WiFi Gratis &#128732;</h3>
+          <p>Internet de alta velocidad en todas las áreas del hotel.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3> Recepción 24 Horas &#128338;</h3>
+          <p>Atención permanente para ayudarte cuando lo necesites.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Estacionamiento &#128663;</h3>
+          <p>Espacio seguro para huéspedes con vehículo propio.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3>Limpieza Diaria &#129529;</h3>
+          <p>Habitaciones limpias, ordenadas y preparadas cada día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN RESERVAS -->
+  <section  class="reserva" id="reservas">
+    <div class="section-title">
+      <h2>Reserva tu Habitación</h2>
+      <p>Completa tus datos y nos pondremos en contacto contigo</p>
+    </div>
+
+    <form id="reservaForm" class="form">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" placeholder="Ingresa tu correo" required>
+
+        <label for="entrada">Fecha de entrada</label>
+        <input type="date" id="entrada" required>
+
+        <label for="salida">Fecha de salida</label>
+        <input type="date" id="salida" required>
+
+        <label for="habitacion">Tipo de habitación</label>
+        <select id="habitacion" required>
+          <option value="">Selecciona una habitación</option>
+          <option>Habitación King Size</option>
+          <option>Habitación con cama redonda</option>
+          <option>Habitación con Jacuzzi</option>
+        </select>
+        
+      <textarea placeholder="Mensaje adicional"></textarea>
+
+      <button type="submit" class="btn" id="Enviarreserva">Enviar reserva</button>
+    </form>
+  </section>
+
+  <!-- SECCIÓN UBICACIÓN -->
+  <selection class="location" id="ubicacion">
+    <div class="section-title">
+      <h2>Ubicación</h2>
+      <p>Jr. Berbaldo Alcedo 488</p>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4062118936704!2d-77.03412762462223!3d-12.084319488155428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c88a92c25631%3A0xe77cddc8f19912b9!2sHotel%20Wellspring!5e0!3m2!1sen!2spe!4v1781849474617!5m2!1sen!2spe"
+      allowfullscreen
+      width="600"
+      height="450"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Mapa de ubicación del hotel">
+    </iframe>
+    <br>
+    <a
+    href="https://maps.app.goo.gl/g1w4uDhtgNbbSz1H8"
+    class="boton-mapa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Ver mapa completo en Google Maps">
+    Ver Mapa Completo
+  </a>
+  </selection>
+</main>
+<!-- PIE DE PÁGINA (FOOTER): Derechos de autor -->
+  <footer>
+    <!-- SECCIÓN CONTACTO -->
+    <div class="footer-links">
+      <a href="https://wa.me/51999999999">WhatsApp</a>
+      <a href="https://www.facebook.com/share/1c6mGu1i2g/">Facebook</a>
+      <a href="https://www.instagram.com/hotelwellspring?igsh=czdxczg5NG5qNjFh">Instagram</a>
+      <a href="https://www.tiktok.com/@hotelwellspring?_r=1&_t=ZS-97KwqRmduuy">TikTok</a>
+    </div>
+
+    <p>© 2026 Hotel Wellspring | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>>
